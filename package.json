@@ -1,0 +1,74 @@
+{
+  "name": "mutualizic",
+  "version": "1.0.0",
+  "description": "Mutualizic is a client developped with ElectronJS. All your music at the same place ! Listen your local music, or connect your Spotify/Deezer/Bandcamp account !",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyDuhamel/Mutualizic.git"
+  },
+  "keywords": [
+    "music",
+    "spotify",
+    "deezer",
+    "bandcamp",
+    "mutualizic",
+    "electron",
+    "js"
+  ],
+  "author": "Jérémy Duhamel",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JeremyDuhamel/Mutualizic/issues"
+  },
+  "homepage": "https://github.com/JeremyDuhamel/Mutualizic#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "^12.0.6"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.3.8"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "mutualizic"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin",
+            "linux"
+          ],
+          "config": {
+            "name": "mutualizic"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
