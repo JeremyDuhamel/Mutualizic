@@ -1,16 +1,22 @@
+const update = require('update-electron-app')
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
 function createWindow () {
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1366,
+        height: 768,
+        backgroundColor: 'black',
+        icon: __dirname + '/ui/img/favicon.png',
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
-        }
+            preload: path.join(__dirname, 'preload.js'),
+            nodeIntegration: true,
+            enableRemoteModule: true
+        },
+        autoHideMenuBar: true,
     })
 
-    win.loadFile('index.html')
+    win.loadFile('./ui/index.html')
 }
 
 app.whenReady().then(() => {

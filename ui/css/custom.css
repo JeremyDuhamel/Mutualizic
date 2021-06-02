@@ -1,0 +1,60 @@
+/*Custom Font*/
+@font-face{
+    font-family: Sansation-Light;
+    src: url(../font/Sansation-Light.ttf);
+}
+
+.cstm-sansation-light{
+    font-family: Sansation-Light;
+}
+
+/*Custom Color*/
+.cstm-primary{
+    background-color: #181920;
+}
+.cstm-secondary{
+    background-color: #303141;
+}
+.cstm-spotify{
+    background-color: #1DB954;
+}
+.cstm-youtube{
+    background-color: #FB0100;
+}
+.cstm-bandcamp{
+    background-color: #1DA0C3;
+}
+.cstm-deezer{
+    background-color: #EB0081;
+}
+.cstm-local{
+    background-color: #000;
+}
+/*Custom Align*/
+.cstm-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cstm-block{
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 45%; 
+    padding: 1.5rem;
+}
+.cstm-paddingless-top{
+    padding-top: 0;
+}
+.cstm-paddingless-bottom{
+    padding-bottom: 0;
+}
+.cstm-paddingless-left{
+    padding-left: 0;
+}
+.cstm-paddingless-right{
+    padding-right: 0;
+}
+/*Custom Elements*/
+body{
+    background-color: #181920;
+}
