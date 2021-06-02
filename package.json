@@ -1,5 +1,5 @@
 {
-  "name": "mutualizic",
+  "name": "Mutualizic",
   "version": "1.0.0",
   "description": "Mutualizic is a client developped with ElectronJS. All your music at the same place ! Listen your local music, or connect your Spotify/Deezer/Bandcamp account !",
   "main": "main.js",

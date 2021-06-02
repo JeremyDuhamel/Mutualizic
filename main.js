@@ -6,7 +6,7 @@ function createWindow () {
     const win = new BrowserWindow({
         width: 1366,
         height: 768,
-        backgroundColor: 'black',
+        backgroundColor: '#181920',
         icon: __dirname + '/ui/img/favicon.png',
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
