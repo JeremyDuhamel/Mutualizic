@@ -4,8 +4,8 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-var client_id = '2976cbb040c84a7bba51d2d3dde5a882'; // Your client id
-var client_secret = '0c1d1d36f80e423f8b8c707d91b1905b'; // Your secret
+var client_id = ''; // Your client id
+var client_secret = ''; // Your secret
 var redirect_uri = './main.html'; // Your redirect uri
 var stateKey = 'spotify_auth_state';
 
