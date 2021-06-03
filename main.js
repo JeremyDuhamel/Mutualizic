@@ -1,4 +1,7 @@
-const update = require('update-electron-app')
+const update = require('update-electron-app')({
+    repo: 'JeremyDuhamel/Mutualizic.git',
+    updateInterval: '10 minutes',
+})
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const url = require('url')
@@ -8,7 +11,7 @@ function createWindow () {
         width: 1366,
         height: 768,
         backgroundColor: '#181920',
-        icon: __dirname + 'favico.ico',
+        icon: path.join(__dirname, 'favicon.png'),
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
